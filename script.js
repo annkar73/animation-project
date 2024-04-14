@@ -7,44 +7,89 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 console.log('script.js is loaded');
 
-const letterO = document.getElementById('LetterO');
-console.log('LetterO element:', letterO);
+const letterB = document.getElementById("LetterB");
 
-gsap.to(letterO, {
-    y: "-=50",
-    ease: "power1.inOut",
-    duration: 1,
-    repeat: -1,
-    yoyo: true
-});
-gsap.to(letterO, {
-    y: "+=65",
-    ease: "power1.inOut",
-    duration: 1,
-    repeat: -1,
-    yoyo: true,
-    delay: 1
+gsap.to(letterB, {
+	x: "-=50",
+	ease: "power1.inOut",
+	duration: 3,
+	repeat: -1,
+	yoyo: true
 });
 
-const letterU = document.getElementById('LetterU');
+const letterO = document.getElementById("LetterO");
+
+gsap.to(letterO, {
+	y: "-=50",
+	ease: "power1.inOut",
+	duration: 1,
+	repeat: -1,
+	yoyo: true
+});
+gsap.to(letterO, {
+	y: "+=65",
+	ease: "power1.inOut",
+	duration: 1,
+	repeat: -1,
+	yoyo: true,
+	delay: 1
+});
+
+const letterU = document.getElementById("LetterU");
 
 gsap.to(letterU, {
-    y: "-=50",
-    ease: "power1.inOut",
-    duration: 1,
-    repeat: -1,
-    yoyo: true
+	y: "-=35",
+	ease: "power1.inOut",
+	duration: 2,
+	repeat: -1,
+	yoyo: true
+});
+gsap.to(letterU, {
+	y: "+=65",
+	ease: "power1.inOut",
+	duration: 2,
+	repeat: -1,
+	yoyo: true,
+	delay: 1
 });
 
-const letterE = document.getElementById('LetterE');
+const letterN = document.getElementById("LetterN");
+
+gsap
+	.timeline({ repeat: -1 })
+	.to(letterN, {
+		scaleY: -1,
+		transformOrigin: "center center",
+
+		ease: "power1.inOut",
+		duration: 1
+	})
+	.to(letterN, {
+		scaleY: 1,
+		transformOrigin: "center center",
+		ease: "power1.inOut",
+		duration: 1,
+		delay: 1
+	});
+
+const letterC = document.getElementById("LetterC");
+
+gsap.to(letterC, {
+	rotation: 360,
+	transformOrigin: "center center",
+	ease: "none",
+	duration: 2,
+	repeat: -1
+});
+
+const letterE = document.getElementById("LetterE");
 
 gsap.to(letterE, {
-    y: "-=15",
-    x: "+=15",
-    ease: "power1.inOut",
-    duration: 1,
-    repeat: -1,
-    yoyo: true
+	x: "+=50",
+	ease: "power1.inOut",
+	duration: 3,
+	repeat: -1,
+	yoyo: true
 });
 
 document.getElementById('bounce').addEventListener('load', function() {
