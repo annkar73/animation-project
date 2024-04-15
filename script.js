@@ -2,10 +2,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     const objectElement = document.getElementById('bounce');
     objectElement.addEventListener('load', function() {
-        console.log('SVG-filen har laddats');
     });
 
-console.log('script.js is loaded');
 
 const letterB = document.getElementById("LetterB");
 
