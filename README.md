@@ -1,3 +1,4 @@
+## Animating a text  
 **A small school project to animate a svg-file.**  
 A work currently in progress... 
 
