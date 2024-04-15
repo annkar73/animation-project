@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-
-    const objectElement = document.getElementById('bounce');
-    objectElement.addEventListener('load', function() {
-    });
-
-
 const letterB = document.getElementById("LetterB");
 
 gsap.to(letterB, {
@@ -88,10 +81,4 @@ gsap.to(letterE, {
 	duration: 3,
 	repeat: -1,
 	yoyo: true
-});
-
-document.getElementById('bounce').addEventListener('load', function() {
-
-});
-
 });
